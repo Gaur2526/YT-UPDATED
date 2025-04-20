@@ -9,6 +9,7 @@ export default function SearchBox() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (query) {
+      console.log(query)
       navigate(`/profile/${query}`);
     }
   };

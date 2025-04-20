@@ -33,6 +33,7 @@ export default function ProfileCard() {
           throw new Error(errorData.error || "Failed to fetch channel data");
         }
         const data = await response.json();
+        console.log(data)
         dispatch(setChannelData(data));
       } catch (error) {
         toast.error(error.message || "Error fetching channel data");
